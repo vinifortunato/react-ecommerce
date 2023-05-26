@@ -1,0 +1,7 @@
+.default-button-wrapper {
+    background-color: lightgreen;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

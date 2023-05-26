@@ -1,8 +1,8 @@
+import Home from "./pages/Home/Home"
+
 function App() {
   return (
-    <div>
-      <h1>E-commerce</h1>
-    </div>
+    <Home />
   )
 }
 

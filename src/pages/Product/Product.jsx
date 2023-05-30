@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
 function Product() {
     const parameters = useParams();
@@ -8,7 +8,7 @@ function Product() {
             <h1>Product</h1>
             <h2>{parameters.id}</h2>
         </div>
-    )
+    );
 }
 
 export default Product;

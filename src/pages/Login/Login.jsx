@@ -1,12 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useCallback } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
     const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = useCallback((event) => {
         event.preventDefault();
         navigate('/');
-    }
+    }, [navigate]);
 
     return (
         <div>
@@ -32,7 +33,7 @@ function Login() {
             </form>
             <Link to="/">Voltar</Link>
         </div>
-    )
+    );
 }
 
 export default Login;

@@ -1,5 +1,5 @@
 module.exports = {
-  env: { 
+  env: {
     browser: true,
     es2020: true
   },
@@ -13,8 +13,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  settings: { 
-    react: { 
+  settings: {
+    react: {
       version: '18.2'
     }
   },
@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
     'quotes': ['error', 'single'],
-    'semi': ['error', 'always']
+    'semi': ['error', 'always'],
+		'react/prop-types': 'off'
   },
 };

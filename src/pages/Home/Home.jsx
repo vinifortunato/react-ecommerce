@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SimpleDisplay from '../../components/SimpleDisplay';
 import { useEffect, useState } from 'react';
+import Header from '../../components/Header';
 
 function Home() {
 	const [products, setProducts] = useState([]);
@@ -16,7 +17,7 @@ function Home() {
 
 	return (
 		<div>
-			<h1>Home Page</h1>
+			<Header />
 			<SimpleDisplay products={products} />
 			<Link to="/login">Login</Link>
 		</div>

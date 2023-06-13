@@ -1,6 +1,6 @@
 import './ProductDisplay.css';
 
-function ProductDisplay({ product }) {
+function ProductDisplay({ product, onAddToCart }) {
 
 	const { brand, title, price, images } = product;
 	const firstImage = images[0];
@@ -17,6 +17,7 @@ function ProductDisplay({ product }) {
 			<p>{brand}</p>
 			<p>{title}</p>
 			<p>{price}</p>
+			<button onClick={() => onAddToCart(product)}>Adicionar ao Carrinho</button>
 		</div>
 	);
 }

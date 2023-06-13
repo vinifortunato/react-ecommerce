@@ -22,8 +22,9 @@
 	align-items: flex-start;
 }
 
-.cart-items {
+.cart-products {
 	display: flex;
+	flex-direction: column;
 	height: calc(100vh - 110px);
 }
 

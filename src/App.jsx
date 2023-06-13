@@ -1,8 +1,11 @@
 import Router from './components/Router/Router';
+import { AppProvider } from './context';
 
 function App() {
   return (
-    <Router />
+		<AppProvider>
+			<Router />
+		</AppProvider>
   );
 }
 

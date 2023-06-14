@@ -1,15 +1,15 @@
-import { useCallback, useContext, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import ProductDisplay from '../ProductDisplay/ProductDisplay';
-
 import './SimpleDisplay.css';
-import { AppContext } from '../../context';
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../../store/cart';
 
 function SimpleDisplay({ products }) {
-	const context = useContext(AppContext);
+	const dispatch = useDispatch();
 
 	const handleAddToCart = useCallback((product) => {
-		context.addToCart(product);
-	}, [context]);
+		dispatch(cartActions.add(product));
+	}, [dispatch]);
 
 	const productsMap = useMemo(() => products.map((product) => {
 		return (

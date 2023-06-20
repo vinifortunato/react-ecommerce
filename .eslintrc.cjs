@@ -9,6 +9,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+		'plugin:cypress/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',

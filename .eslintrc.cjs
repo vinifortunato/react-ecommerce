@@ -2,15 +2,16 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
-		jest: true
+    jest: true
   },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-		'plugin:cypress/recommended'
-  ],
+		'eslint:recommended',
+		'plugin:react/recommended',
+		'plugin:react/jsx-runtime',
+		'plugin:react-hooks/recommended',
+		'plugin:cypress/recommended',
+		'plugin:storybook/recommended'
+	],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
@@ -25,6 +26,6 @@ module.exports = {
     'react-refresh/only-export-components': 'warn',
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
-		'react/prop-types': 'off'
-  },
+    'react/prop-types': 'off'
+  }
 };

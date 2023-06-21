@@ -29,7 +29,13 @@ function Header() {
 					<input className="header-search-input" placeholder="O que você procura hoje?" />
 				</div>
 				<div className="header-options">
-					<button className="header-cart-button" onClick={() => toggleCart(true)}>Carrinho {productUtils.getTotalProducts(products)}</button>
+					<button
+						className="header-cart-button"
+						onClick={() => toggleCart(true)}
+						data-testid="header-cart-button"
+					>
+						Carrinho {productUtils.getTotalProducts(products)}
+					</button>
 				</div>
 			</div>
 			<Cart

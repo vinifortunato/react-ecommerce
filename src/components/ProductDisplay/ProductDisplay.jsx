@@ -17,7 +17,7 @@ function ProductDisplay({ product, onAddToCart }) {
 			<p>{brand}</p>
 			<p>{title}</p>
 			<p>{price}</p>
-			<button onClick={() => onAddToCart(product)}>Adicionar ao Carrinho</button>
+			<button data-testid={`product-display-${product.id}`} onClick={() => onAddToCart(product)}>Adicionar ao Carrinho</button>
 		</div>
 	);
 }

@@ -18,7 +18,7 @@ function SimpleDisplay({ products }) {
 	}), [products, handleAddToCart]);
 
 	return (
-		<section className="simple-display-wrapper">
+		<section className="simple-display-wrapper" data-testid="simple-display">
 			{productsMap}
 		</section>
 	);

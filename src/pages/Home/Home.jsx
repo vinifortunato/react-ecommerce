@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import SimpleDisplay from '../../components/SimpleDisplay';
 import { useEffect, useState } from 'react';
 import Header from '../../components/Header';
@@ -18,19 +17,23 @@ function Home() {
 	}, [dispatch]);
 
 	useEffect(() => {
-		fetch('https://dummyjson.com/products')
+
+		fetch('https://dummyjson.com/products?limit=5')
 			.then((response) => response.json())
 			.then((data) => {
 				const { products } = data;
+				console.log(products);
 				setProducts(products);
 			});
+
 	}, []);
 
 	return (
 		<div>
 			<Header />
-			<SimpleDisplay products={products} />
-			<Link to="/login">Login</Link>
+			<div className='container'>
+				<SimpleDisplay products={products} />
+			</div>
 		</div>
 	);
 }

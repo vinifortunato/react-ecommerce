@@ -4,6 +4,7 @@ import './Header.css';
 import { productUtils } from '../../utils';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../store/cart';
+import { Link } from 'react-router-dom';
 
 function Header() {
 	const [showCart, setShowCart] = useState(false);
@@ -29,6 +30,7 @@ function Header() {
 					<input className="header-search-input" placeholder="O que você procura hoje?" />
 				</div>
 				<div className="header-options">
+					<Link to="/login" className='header-login-button'>Login</Link>
 					<button
 						className="header-cart-button"
 						onClick={() => toggleCart(true)}

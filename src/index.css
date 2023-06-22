@@ -6,3 +6,12 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+.container {
+	display: flex;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 15px;
+	justify-content: center;
+}
